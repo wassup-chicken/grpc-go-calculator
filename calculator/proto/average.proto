@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "github.com/wassup-chicken/grpc-exercise-1/calculator/proto";
+
+message AverageRequest {
+    int64 input = 1;
+}
+
+message AverageResponse {
+    double result = 1;
+}

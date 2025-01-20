@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "github.com/wassup-chicken/grpc-exercise-1/calculator/proto";
+
+message SqrtRequest {
+    int32 input = 1; //could be uint32
+}
+
+message SqrtResponse {
+    double result = 1;
+}
